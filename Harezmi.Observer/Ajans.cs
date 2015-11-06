@@ -5,45 +5,32 @@ using System.Text;
 
 namespace Harezmi.Observer
 {
-    public class Ajans : IObservable<Haber>
+    public class Ajans : IObservable
     {
-        private List<IObserver<Haber>> observers;
+        private List<IObserver> observers;
 
         public Ajans()
         {
-            observers = new List<IObserver<Haber>>();
+            observers = new List<IObserver>();
         }
 
-        public IDisposable Subscribe(IObserver<Haber> observer)
+        public void Subscribe(IObserver observer)
         {
             if (!observers.Contains(observer))
                 observers.Add(observer);
-            return new Unsubscriber(observers, observer);
         }
 
-        private class Unsubscriber : IDisposable
+        public void Unsubscribe(IObserver observer)
         {
-            private List<IObserver<Haber>> _observers;
-            private IObserver<Haber> _observer;
-
-            public Unsubscriber(List<IObserver<Haber>> observers, IObserver<Haber> observer)
-            {
-                this._observers = observers;
-                this._observer = observer;
-            }
-
-            public void Dispose()
-            {
-                if (_observer != null && _observers.Contains(_observer))
-                    _observers.Remove(_observer);
-            }
+            if (observer != null && observers.Contains(observer))
+                observers.Remove(observer);
         }
 
-        public void HaberVer(string mesaj)
+        public void Notify(string mesaj)
         {
             Haber haber = new Haber(mesaj);
 
-            observers.ForEach(x => x.OnNext(haber));
+            observers.ForEach(x => x.Update(haber));
         }
     }
 }

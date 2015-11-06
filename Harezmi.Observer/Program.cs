@@ -16,18 +16,18 @@ namespace Harezmi.Observer
 
             Ajans ajans = new Ajans();
 
-            abone1.Subscribe(ajans);
-            abone2.Subscribe(ajans);
-            abone3.Subscribe(ajans);
-            abone4.Subscribe(ajans);
+            ajans.Subscribe(abone1);
+            ajans.Subscribe(abone2);
+            ajans.Subscribe(abone3);
+            ajans.Subscribe(abone4);
 
-            ajans.HaberVer("Fenerbahce Şampiyon");
+            ajans.Notify("Fenerbahce Şampiyon");
 
             Console.WriteLine("\n");
 
-            abone2.Unsubscribe();
+            ajans.Unsubscribe(abone3);
 
-            ajans.HaberVer("Galatasaray Şampiyon");
+            ajans.Notify("Galatasaray Şampiyon");
 
             Console.ReadKey();
         }
