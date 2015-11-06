@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harezmi.Visitor", "Harezmi.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harezmi.ChainOfResponsibility", "Harezmi.ChainOfResponsibility\Harezmi.ChainOfResponsibility.csproj", "{6A0F75E5-1508-4AFC-AE02-71890DDEAEF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harezmi.Facade", "Harezmi.Facade\Harezmi.Facade.csproj", "{B4F6205C-B3E8-410F-88C9-1079F2FE6270}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{6A0F75E5-1508-4AFC-AE02-71890DDEAEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A0F75E5-1508-4AFC-AE02-71890DDEAEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A0F75E5-1508-4AFC-AE02-71890DDEAEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F6205C-B3E8-410F-88C9-1079F2FE6270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F6205C-B3E8-410F-88C9-1079F2FE6270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F6205C-B3E8-410F-88C9-1079F2FE6270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F6205C-B3E8-410F-88C9-1079F2FE6270}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
