@@ -18,6 +18,8 @@ namespace Harezmi.Composite
                 .Ekle(new KolaBardakFirsatUrunu())
                 .Ekle(new KolaBardakFirsatUrunu());
 
+            //TEST
+
             Console.WriteLine(alisverisSepeti.GetToplamFiyat());
 
             Console.ReadKey();
