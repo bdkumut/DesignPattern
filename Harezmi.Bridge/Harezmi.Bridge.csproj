@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CizimProgramiV2.cs" />
     <Compile Include="CizimProgramiV1.cs" />
     <Compile Include="CizimProgramiV1Bridge.cs" />
     <Compile Include="ICizimProgrami.cs" />
