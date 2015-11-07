@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harezmi.Mediator", "Harezmi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harezmi.Bridge", "Harezmi.Bridge\Harezmi.Bridge.csproj", "{7724A67D-0E70-4CFB-AB29-35B21704893C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harezmi.Interpreter1", "Harezmi.Interpreter1\Harezmi.Interpreter1.csproj", "{1F569674-CE8E-4EDB-9D14-A43872CCA4D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{7724A67D-0E70-4CFB-AB29-35B21704893C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7724A67D-0E70-4CFB-AB29-35B21704893C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7724A67D-0E70-4CFB-AB29-35B21704893C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F569674-CE8E-4EDB-9D14-A43872CCA4D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F569674-CE8E-4EDB-9D14-A43872CCA4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F569674-CE8E-4EDB-9D14-A43872CCA4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F569674-CE8E-4EDB-9D14-A43872CCA4D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
